@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    box-sizing: border-box;
+    
+}
+
+.leftside-bar .menu{
+    
+        position: absolute;
+        display: none;
+        left: 20px;
+        top: 20px;
+   
+}
+.menu a{
+    color: rgb(32, 32, 32)61, 60, 60); 
+    font-size: 27px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100vh;
+    background-color: rgb(15, 15, 15) ;
+    overflow-x: hidden;
+    z-index: 5; 
+    transition:0.5s all;
+}
+.overlay a{
+    padding: 10px;
+    color: #fccf1d;
+    font-size: 40px;
+    text-decoration: none;
+    display: none;
+}
+
+.left-side{
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+    background: #fff;
+
+
+}
+.logo img{
+    width: 35%;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+.left-con h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.left-con p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+
+}
+.left-con a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px;
+    color: #000;
+    padding-left: 10px;
+        
+
+}
+.left-con a:hover{
+    background: #e4e4e4;
+    padding: 5px;
+    color: rgb(8, 199, 8);
+    transition: 0.5 ease-in;
+}
+
+.left-con a i{
+    font-weight: 400 !important;
+    margin: 5px;
+}
+.left-icon{
+    display: flex;
+    
+
+}
+.left-icon i{
+    font-size: 20px;
+    padding: 5px;
+   
+    
+    
+}
+
+/* right-side */
+.right-side{
+    width: 75%;
+    margin-left: 25%;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+    background: #f1f1f1;
+    /* margin: 10px; */
+    
+    
+}
+.right-side h3{
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 14px;
+
+}
+.side-filter{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border-bottom: 6px solid rgb(214, 212, 212)!important;
+    margin-bottom: 16px!important;
+    cursor: pointer;
+}
+.side-filter p:hover{
+    background-image: linear-gradient(to right top, #e4e7de, #d3d4ab, #cebc76, #d0a142, #d7800a);
+    border: none;
+    color: #fff;
+    
+}
+.side-filter p{
+    font-size: 18px;
+    font-weight: 300;
+    width: 50%;
+    margin: 10px 5px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+}
+.side-filter .dif-blc{
+    background: #000;
+    color: #fff;
+    
+}
+.side-filter .dif-blc:hover{
+    /* color: #000; */
+    background: #000;
+    color: #fff;
+}
+
+.right-post{
+    
+}
+.flex{
+    display:  flex;
+    width: 100%;
+    padding: 5px;
+
+}
+.post{
+  
+        margin: 5px;
+        /* padding: 5px; */
+        background: #fff;
+    }
+.post img{
+    width: 100%;
+    
+}
+.post img:hover{
+    opacity: 0.7;
+}
+.post .rot{
+     /* transition: all 0.3s ease-in-out 0s; */
+}
+.post .rot:hover{
+    cursor: default;
+    transform: scale(0.9);
+    /* transition: all 0.3s ease-in-out 0s; */
+}
+.post h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.post p{
+    font-size: 16px;
+    font-weight: 350;
+    margin: 10px;
+}
+.num{
+    width: 40%;
+    margin: auto;
+}
+.num p{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.about{
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.about-img{
+    display: flex;
+    width: 100%;
+    
+}
+.abo-img{
+    width: 100%;
+    margin: 5px;   
+}
+.abo-img img{
+    width: 100%;
+    /* margin: 5px; */  
+    padding: 5px; 
+}
+.about h5{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about p{
+    font-size: 16px;
+    font-weight: 350;
+    margin-bottom: 35px;
+    margin: 0 10px;
+}
+.w3-grey{
+    color: #000;
+    background: #9e9e9e;
+}
+.w3-container{
+    color: #fff;
+    background-color: #616161;
+    padding: 8px 16px;
+    text-align: center;
+}
+.pro-bar h5{
+    margin: 25px 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.progress p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px 10px;
+}
+.w3-grey{
+    margin: 10px;
+}
+.pro-bar button{
+    margin: 10px;
+    padding: 15px;
+    background-color: #616161;
+    color: #e4e4e4;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+.price{
+    width: 100%;
+    display: flex;
+}
+.pri-chart{
+    margin: 25px 0px;
+    width: 100%;
+  
+}
+.pri-chart h5{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+    
+}
+.chart{
+    border: 1px solid #616161;
+    margin: 5px;
+    width: 100%;
+    background-color: #fff;
+
+}
+ 
+.chart p{
+    
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px  ;
+    border-bottom: 1px solid #616161;
+}
+.chart .spl{
+   
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    
+    
+}
+.chart .spl-2{
+    /* background-color: rgb(106, 252, 252); */
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(51, 50, 50);
+}
+.chart .spl-3{
+    /* background-color: black; */
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+.chart .spl, .spl-2, .spl-3{
+    background-image: linear-gradient(to right top, #e4e7de, #d3d4ab, #cebc76, #d0a142, #d7800a);
+}
+.chart button{
+    padding: 10px;
+    margin: 10px;
+    width: 35%;
+    font-size: 18px;
+    font-weight: 400;
+}
+.chart button:hover{
+    background-image: linear-gradient(to right top, #e4e7de, #d3d4ab, #cebc76, #d0a142, #d7800a);
+    
+    border: none;
+}
+.chart .pri-pri{
+   
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 1px solid #616161;
+
+}
+.con-tact{
+    padding: 10px;
+    background: #9e9e9e;
+}
+.con-tact h5{
+    margin: 25px 20px;
+    color: #a2ea00;
+    font-size: 26px;
+    font-weight: 500;
+}
+.con-icon{
+    margin: 40px 10px;
+    display: flex;
+    background: #616161;
+    padding: 20px;
+
+}
+.con-icon .fan-icon{
+    /* padding: 20px ; */
+    margin: auto;
+    width: 10%;
+
+}
+.con-icon .fan-icon i{
+    font-size: 40px;
+    color: #fff;
+    margin: 10px;
+
+}
+.fan-icon i:hover{
+     color: rgb(39, 243, 20);
+}
+.con-icon p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(231, 229, 229);
+    margin: 10px;
+    
+}
+.form{
+    margin: 10px;
+
+}
+.form-con label{
+width: 100%;
+font-size: 18px;
+margin: 10px;
+
+}
+.form-con input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+.form button{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+.footer{
+    /* margin: 30px 0px; */
+    background: #616161;
+    display: flex;
+    width: 100%;
+
+}
+.foot{
+    width: 33.33%;
+    margin: 30px 10px;
+
+}
+.foot h4{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 20px;
+
+}
+.foot p{
+    font-size: 16px;
+    font-weight: 350;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+
+.foot-post img{
+    width: 30%;
+    margin: 5px;
+
+}
+
+.foot-post p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    
+    /* border-bottom: 1px solid #e2e2e2; */
+    width: 70%;
+}
+.foot-con{
+    width: 100%;
+    display: flex;
+}
+.foot-con p{
+    width: 67%;
+}
+.foot span{
+    font-size: 16px;
+    background-color: #9c9b9b;
+    color: rgb(12, 12, 12);
+    margin-bottom: 16px!important;
+   
+    text-align: center;
+}
+.foot-botm{
+    background-color: azure;
+}
+.foot-botm h4{
+    text-align: center;
+    font-size: 1.rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1000px){
+    .left-side{
+        /* display: block; */
+        width: 0px;
+        /* position:relative */
+    }
+    .leftside-bar .menu, .overlay a{
+        display: block;
+        }
+    .right-side{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width:600px){
+    .leftside-bar .menu, .overlay a{
+    display: block;
+    }
+    .side-filter{
+     width: 100%;   
+     margin: 2px;
+     border-bottom: none !important; 
+    margin-bottom: 10px!important;
+    }
+    .side-filter p{
+        margin: 2px;
+        padding: 2px;
+    }
+    .right-side h3{
+       padding: 0px;
+    }
+    .flex{
+        width: 100%;
+        display: block;
+    }
+    .about-img{
+        display: block;
+        width: 100%;
+    }
+    .price{
+        display: block;
+        width: 100%;
+    }
+    .con-icon{
+        display: block;
+        width: 100%;
+    }
+    .con-icon .fan-icon{
+        width: 50%;
+        border-bottom: 2px solid #a2ea00;
+    }
+    .footer{
+      display: block;
+      width: 100%;
+        
+    }
+    .foot{
+        width: 100%;
+    }
+}
